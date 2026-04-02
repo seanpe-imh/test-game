@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Throw — test-game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hud">
+      <h1>Free throw</h1>
+      <p class="sub">Side view · <kbd>Space</kbd> starts the power meter, <kbd>Space</kbd> again to shoot</p>
+      <div class="stats">
+        <span id="score">Score: 0</span>
+        <span id="msg" class="msg"></span>
+      </div>
+    </header>
+    <canvas id="game" width="960" height="420" aria-label="Basketball free throw game"></canvas>
+    <p class="hint">Power line sweeps back and forth — time your second press for a swish.</p>
+  </div>
+  <script src="game.js" type="module"></script>
+</body>
+</html>
